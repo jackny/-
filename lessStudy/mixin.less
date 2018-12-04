@@ -1,0 +1,58 @@
+@charset "utf-8";
+/*样式类名 Mixin  混入*/
+//组合样式 左浮动 右浮动 宽度50% 左边框 右边框
+@borderColor:#cccccc;
+//.f_left{
+//  float: left;
+//}
+//.f_right{
+//  float: right;
+//}
+//.b_left{
+//  border-left: 1px solid @border;
+//}
+//.b_right{
+//  border-right: 1px solid @border;
+//}
+//
+////需求：左浮动 左边框
+////通过 左浮动 左边框 混入到FlBl中
+//.FlBl{
+//  .f_left();
+//  .b_left();
+//}
+
+/*函数 Mixin*/
+//js var a=function(){}
+//类名之后加括号
+.f_left(){
+  float: left;
+}
+.f_right()  {
+  float: right;
+}
+.b_left(){
+  border-left: 1px solid @borderColor;
+}
+.b_right(){
+  border-right: 1px solid @borderColor;
+}
+/*定义一个可以传参的方法,兼容性处理*/
+//@direction 定义参数 但是一定要有默认变量值
+//拼接：border-  @{direction}
+.border(@direction:left){
+   border-@{direction}: 1px solid @borderColor;
+}
+//圆角
+.borderRadius(@width:10px){
+  border-radius:@width;
+  -webkit-border-radius:@width;
+  -moz-border-radius:@width;
+  -ms-border-radius:@width;
+  -o-border-radius:@width;
+}
+.FlBl{
+  .f_left();
+  .border(bottom);
+  .borderRadius(200px);
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            font-size: 40px;
+        }
+        /*+选择器 先找到+前面的元素 然后找这个元素的紧邻的下一个元素*/
+        /*li + li{*/
+            /*color: green;*/
+        /*}*/
+        /*~选择器 先找到~前面的元素 然后找这个元素的后面的所有同级的li*/
+        li ~ li{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+</body>
+</html>

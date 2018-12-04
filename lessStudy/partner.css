@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*嵌套语法*/
+/*合作模块*/
+.wjs_partner {
+  padding: 30px 0;
+}
+.wjs_partner ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+.wjs_partner ul li {
+  display: inline-block;
+  background-color: #cccccc;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.wjs_partner ul li a {
+  display: block;
+  margin: 0 15px;
+}
+.wjs_partner ul li a:hover {
+  color: #e92322;
+}
+.wjs_partner ul li a span {
+  font-size: 60px;
+}

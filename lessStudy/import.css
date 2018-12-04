@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*1.这样的注释是会编译到css当中的，css也支持*/
+a:hover {
+  color: #e92322;
+}
+body {
+  background-color: #e92322;
+  font-size: 14px;
+}
+a {
+  color: #e92322;
+}
+/*内置函数  运算*/
+.col-xs-1 {
+  width: 6.66666667%;
+  padding: 0 15px;
+  color: #f09595;
+}
